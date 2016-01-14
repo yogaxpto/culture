@@ -1,0 +1,9 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",  // support for ES7 decorators and static variables
+  "rules": {
+    "comma-dangle": 0,  // not sure why airbnb turned this on. gross!
+    "indent": [2, 4, {"SwitchCase": 1}],
+    "react/jsx-indent-props": 0
+  }
+}
