@@ -9,5 +9,9 @@
       "args": "none"
     }],
     "react/jsx-indent-props": 0
+  },
+  "env": {
+    "browser": true,
+    "mocha": true
   }
 }
