@@ -35,8 +35,8 @@ pep8:
   options:
     max-line-length: 120
   disable:
-    - W292
-    - W391
+    - W292  # no newline at end of file
+    - W391  # blank line at end of file
     - E402
 
 pyroma:
@@ -48,11 +48,11 @@ pyroma:
 pep257:
   run: true
   disable:
-    - D100
-    - D101
-    - D104
-    - D202
-    - D203
+    - D100  # Missing docstring in public module
+    - D101  # Missing docstring in public class
+    - D104  # Missing docstring in public package
+    - D202  # No blank lines allowed after function docstring
+    - D203  # 1 blank line required before class docstring
 
 mccabe:
   options:
