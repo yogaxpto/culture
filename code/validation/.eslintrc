@@ -8,6 +8,7 @@
       "vars": "local",
       "args": "none"
     }],
+    "max-len": [2, 120, 4, {"ignoreUrls": true}],
     "react/jsx-indent-props": 0
   },
   "env": {
