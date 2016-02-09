@@ -8,7 +8,8 @@
       "vars": "local",
       "args": "none"
     }],
-    "max-len": [2, 120, 4, {"ignoreUrls": true}],
+    "max-len": [2, 120, 4, {"ignoreUrls": true}],  // set max line length to 120
+    "arrow-body-style": [2, "always"],   //always force braces around arrow function body
     "react/jsx-indent-props": 0
   },
   "env": {
