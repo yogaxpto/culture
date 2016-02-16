@@ -5,6 +5,7 @@ omit =
     *manage.py,
     *settings/prod.py,
     *settings/staging.py,
+    *settings/shippable.py,
     *wsgi.py
 
 
