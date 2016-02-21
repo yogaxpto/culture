@@ -11,7 +11,10 @@
     "max-len": [2, 120, 4, {"ignoreUrls": true}],  // set max line length to 120
     "arrow-body-style": [2, "always"],   //always force braces around arrow function body
     "no-param-reassign": [2, {"props": false}], // allow assign values to props of parameters 
-    "react/jsx-indent-props": 0
+    "react/jsx-indent-props": 0,
+    "react/jsx-space-before-closing": [2, "never"],
+    // don't force break chaining into new lines because this this.props.actions.authLoginUser() is valid
+    "newline-per-chained-call": 0
   },
   "env": {
     "browser": true,
