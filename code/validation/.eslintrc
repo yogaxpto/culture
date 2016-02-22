@@ -1,20 +1,39 @@
 {
-  "extends": "airbnb",
-  "parser": "babel-eslint",  // support for ES7 decorators and static variables
+  "extends": [
+    "airbnb",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+
+  ],
+  // support for ES7 decorators and static variables
+  "parser": "babel-eslint",
+  "settings":{
+    "import/ignore": [
+      "node_modules",
+      ".(scss|less|css|png|jpg|po|svg)$"
+    ]
+  },
   "rules": {
-    "comma-dangle": 0,  // not sure why airbnb turned this on. gross!
+    // not sure why airbnb turned this on. gross!
+    "comma-dangle": 0,
     "indent": [2, 4, {"SwitchCase": 1}],
-    "no-unused-vars": [2, {          // we prefer to be able to declara all parameters a function receives
+    // we prefer to be able to declara all parameters a function receives
+    "no-unused-vars": [2, {
       "vars": "local",
       "args": "none"
     }],
-    "max-len": [2, 120, 4, {"ignoreUrls": true}],  // set max line length to 120
-    "arrow-body-style": [2, "always"],   //always force braces around arrow function body
-    "no-param-reassign": [2, {"props": false}], // allow assign values to props of parameters 
+    // set max line length to 120
+    "max-len": [2, 120, 4, {"ignoreUrls": true}],
+    //always force braces around arrow function body
+    "arrow-body-style": [2, "always"],
+    // allow assign values to props of parameters
+    "no-param-reassign": [2, {"props": false}],
     "react/jsx-indent-props": 0,
     "react/jsx-space-before-closing": [2, "never"],
     // don't force break chaining into new lines because this this.props.actions.authLoginUser() is valid
-    "newline-per-chained-call": 0
+    "newline-per-chained-call": 0,
+    // don't check for default exports as current version does not support module.exports = ... as default
+    "import/default": 0
   },
   "env": {
     "browser": true,
