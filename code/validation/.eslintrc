@@ -33,7 +33,9 @@
     // don't force break chaining into new lines because this this.props.actions.authLoginUser() is valid
     "newline-per-chained-call": 0,
     // don't check for default exports as current version does not support module.exports = ... as default
-    "import/default": 0
+    "import/default": 0,
+    // don't prefer prefer-stateless-function
+    "react/prefer-stateless-function": 0
   },
   "env": {
     "browser": true,
