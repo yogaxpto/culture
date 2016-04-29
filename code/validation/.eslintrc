@@ -22,6 +22,8 @@
       "vars": "local",
       "args": "none"
     }],
+    // Properties quoting should be consistent (as in "consistent") but whenever all quotes are redundant a warning is raised
+    "quote-props": ["error", "consistent-as-needed", { "keywords": true }],
     // set max line length to 120
     "max-len": [2, 120, 4, {"ignoreUrls": true}],
     //always force braces around arrow function body
