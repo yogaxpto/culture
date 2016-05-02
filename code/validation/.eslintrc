@@ -3,7 +3,6 @@
     "airbnb",
     "plugin:import/errors",
     "plugin:import/warnings"
-
   ],
   // support for ES7 decorators and static variables
   "parser": "babel-eslint",
@@ -32,6 +31,8 @@
     "no-param-reassign": [2, {"props": false}],
     "react/jsx-indent-props": 0,
     "react/jsx-space-before-closing": [2, "never"],
+    // enforce consistent indentation style. The default style is 4 spaces
+    "react/jsx-indent": [2, 4],
     // don't force break chaining into new lines because this this.props.actions.authLoginUser() is valid
     "newline-per-chained-call": 0,
     // don't check for default exports as current version does not support module.exports = ... as default
