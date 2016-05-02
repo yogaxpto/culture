@@ -2,14 +2,16 @@
 files:
   include: 'src/static/**/**/*.scss'
   ignore:
-    - 'node_modules/*'
-    
-# Rule Configuration    
+    - 'node_modules/**'
+
+# Rule Configuration
 options:
   formatter: stylish
   merge-default-rules: false
 rules:
-  bem-depth: 3
+  bem-depth:
+    - 3
+    - max-depth: 3
   border-zero:
     - 1
     - convention: none
