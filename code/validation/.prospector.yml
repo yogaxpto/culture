@@ -26,7 +26,7 @@ pylint:
     max-branches: 20
     max-statements: 60
     min-public-methods: 1
-    max-public-methods: 20
+    max-public-methods: 24
     max-line-length: 120
     max-args: 10
     max-module-lines: 1200
