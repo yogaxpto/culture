@@ -30,6 +30,7 @@ pylint:
     max-line-length: 120
     max-args: 10
     max-module-lines: 1200
+    max-attributes: 8
 
 pep8:
   options:
