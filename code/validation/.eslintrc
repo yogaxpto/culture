@@ -35,7 +35,7 @@
     // enforce consistent indentation style. The default style is 4 spaces
     "react/jsx-indent": [2, 4],
     // Ensure correct position of the first property.
-    // "react/jsx-first-prop-new-line": [2, "never"],
+    "react/jsx-first-prop-new-line": [2, "never"],
     // don't force break chaining into new lines because this this.props.actions.authLoginUser() is valid
     "newline-per-chained-call": 0,
     // don't check for default exports as current version does not support module.exports = ... as default
