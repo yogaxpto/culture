@@ -41,7 +41,9 @@
     // don't check for default exports as current version does not support module.exports = ... as default
     "import/default": 0,
     // don't prefer prefer-stateless-function
-    "react/prefer-stateless-function": 0
+    "react/prefer-stateless-function": 0,
+    // allow jsx in .js files
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "env": {
     "browser": true,
