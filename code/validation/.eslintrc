@@ -31,7 +31,6 @@
     // allow assign values to props of parameters
     "no-param-reassign": [2, {"props": false}],
     "react/jsx-indent-props": 0,
-    "react/jsx-space-before-closing": [2, "never"],
     // enforce consistent indentation style. The default style is 4 spaces
     "react/jsx-indent": [2, 4],
     // Ensure correct position of the first property.
