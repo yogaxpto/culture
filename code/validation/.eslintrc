@@ -10,7 +10,12 @@
     "import/ignore": [
       "node_modules",
       ".(scss|less|css|png|jpg|po|svg)$"
-    ]
+    ],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ios.js", ".android.js"]
+      }
+    }
   },
   "rules": {
     // not sure why airbnb turned this on. gross!
