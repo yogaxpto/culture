@@ -15,7 +15,6 @@ pylint:
     - missing-final-newline
     - too-few-public-methods
     - too-many-ancestors
-    - no-else-return # ignore if con return else return new in pylint 1.7
     - W0613  # allow Unused arguments
     - W0142  # allow Used * or ** magic
     - R0201  # disable no-self-use
