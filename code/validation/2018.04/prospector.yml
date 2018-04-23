@@ -19,7 +19,6 @@ pylint:
     - W0142  # allow Used * or ** magic
     - R0201  # disable no-self-use
 
-
   options:
     max-locals: 25
     max-returns: 6
@@ -31,6 +30,13 @@ pylint:
     max-args: 10
     max-module-lines: 1200
     max-attributes: 8
+    # Regular expressions used to match various names
+    # (we allow longer names than default)
+    argument-rgx: "[a-z_][a-z0-9_]{2,60}$"
+    attr-rgx: "[a-z_][a-z0-9_]{2,60}$"
+    function-rgx: "[a-z_][a-z0-9_]{2,60}$"
+    method-rgx: "[a-z_][a-z0-9_]{2,60}$"
+    variable-rgx: "[a-z_][a-z0-9_]{2,60}$"
 
 pep8:
   options:
