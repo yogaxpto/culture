@@ -5,7 +5,8 @@ omit =
     *manage.py,
     *settings/*,
     *migrations/*,
-    *wsgi.py
+    *wsgi.py,
+    *asgi.py
 
 
 [report]
