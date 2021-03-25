@@ -11,7 +11,7 @@
     ],
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".ios.js", ".android.js"]
+        "extensions": [".js", ".ios.js", ".android.js", ".ts", ".tsx"]
       }
     }
   },
@@ -34,7 +34,7 @@
     // don't force break chaining into new lines because this this.props.actions.authLoginUser() is valid
     "newline-per-chained-call": 0,
     // allow jsx in .js files
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     // don't prefer prefer-stateless-function
     "react/prefer-stateless-function": 0,
     // Enforce consistent usage of destructuring assignment of props, state, and context
