@@ -9,7 +9,7 @@ module.exports = {
         'prefer-destructuring': [
             'error',
             {
-                array: true,
+                array: false,
                 object: true,
             },
             {
